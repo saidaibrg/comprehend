@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="../javascript/process.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <style>
   
@@ -89,7 +90,7 @@ window.addEventListener('load', function() {
           img.src = URL.createObjectURL(this.files[0]); // set src to blob url
       }
   });
-  document.getElementById("myImg").style.display = "none"; 
+  //document.getElementById("myImg").style.display = "block"; 
   
 });
 </script>
@@ -115,8 +116,6 @@ window.addEventListener('load', function() {
   <label for="file">Choose a file</label>
   {% if filename is not none %}
   <br><br><img id="myImg" src="{{filename}}" width="300" />
-  {% else %}
-  <br><img id="myImg" src="#" width="300" />
   {% endif %}
 </div>
 </form>

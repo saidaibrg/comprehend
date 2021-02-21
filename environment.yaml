@@ -100,7 +100,7 @@ dependencies:
   - pip:
     - lmdb==1.1.1
     - lmdbdict==0.2.2
-    - meshed-memory-transformer==0.0.1
+    # - meshed-memory-transformer==0.0.1
     - opencv-python==4.5.1.48
     - pytesseract==0.3.7
 prefix: /Users/jzpan/anaconda3/envs/blueprint2021
